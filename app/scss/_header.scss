@@ -1,0 +1,173 @@
+.header {
+  position: relative;
+
+  &__top {
+    border-bottom: 1px solid #E2E1E1;
+    min-height: 90px;
+    position: relative;
+    z-index: 2;
+
+    &:after {
+
+    }
+
+    &-link {
+      font-size: 18px;
+      line-height: 23px;
+      text-decoration-line: underline;
+      font-weight: 700;
+      color: #069E2D;
+      text-align: right;
+
+      &-text {
+
+      }
+    }
+  }
+
+  &__content {
+    padding-left: 0;
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+
+  &__desc {
+    margin-bottom: 70px;
+
+    &-text {
+      font-size: 24px;
+      line-height: 31px;
+      margin-top: 25px;
+    }
+  }
+
+  &__link {
+    max-width: 320.51px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  &__main {
+
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 90px;
+    height: 100%;
+    width: 51.4%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(60% at 66% 36%);
+  }
+}
+
+@media (max-width: 1235px) {
+  .header__bg {
+    clip-path: circle(55% at 66% 36%);
+  }
+}
+
+@media (max-width: 1120px) {
+  .header__bg {
+    clip-path: circle(50% at 66% 36%);
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__bg {
+      height: 70%;
+    }
+  }
+}
+
+@media (max-width: 792px) {
+  .title--size-big {
+    font-size: 38px;
+    line-height: 52px;
+  }
+  .header {
+    &__content {
+      position: relative;
+      z-index: 2;
+    }
+
+    &__bg {
+
+    }
+  }
+}
+
+@media (max-width: 715px) {
+  .header__bg {
+    clip-path: circle(50% at 66% 36%);
+    height: 45%;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo {
+    &.logo {
+      &--right {
+        max-width: 100px;
+      }
+
+      &--left {
+        max-width: 100px;
+        margin-left: auto;
+      }
+    }
+  }
+  .title--size-big {
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .header {
+    &__content {
+      padding-bottom: 50px;
+      padding-top: 200px;
+    }
+    &__desc{
+      margin-bottom: 30px;
+      &-text{
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+@media (max-width: 410px) {
+  .header{
+    &__link{
+      max-width: 100%;
+    }
+    &__bg{
+      height: 245px;
+      width: 265px;
+      clip-path: circle(60% at 66% 36%);
+    }
+  }
+}
+@media (max-width: 370px) {
+  .header {
+    &__top {
+      height: 60px;
+    }
+  }
+  .logo {
+    &.logo {
+      &--right {
+        max-width: 75px;
+      }
+
+      &--left {
+        max-width: 80px;
+      }
+    }
+  }
+}
