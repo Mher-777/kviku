@@ -3,3 +3,100 @@
 @import "fonts";
 @import "custom";
 @import "header";
+
+.telemedicine{
+  &__bg{
+    padding-top: 30px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 1812px;
+      height: 1270px;
+      border-radius: 50%;
+      background: linear-gradient(257.92deg, #2D5D94 -2.29%, #0580E7 102.17%);
+      left: -340px;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+  &__inner{
+    padding: 50px 0;
+  }
+  &__link{
+    max-width: 320.51px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__item{
+    background-color: $white;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    &-desc{
+      max-width: 240px;
+    }
+    &-number{
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 124px;
+      color: $blue;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+  &__pagination{
+    display: none;
+    position: static;
+    margin-top: 40px;
+  }
+  &__dots{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    margin: 0 10px;
+    cursor: pointer;
+    &--active{
+      background-color: $blue;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .title{
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .telemedicine{
+    &__item{
+      height: 180px;
+      &-number{
+        font-size: 72px;
+        line-height: 93px;
+      }
+    }
+    &__bg{
+      &::before{
+        width: 817px;
+        height: 670px;
+        left: -372px;
+        top: -150px;
+      }
+    }
+    &__link{
+      display: none;
+    }
+    &__inner{
+      padding-bottom: 0;
+    }
+    &__pagination{
+      display: block;
+    }
+  }
+}

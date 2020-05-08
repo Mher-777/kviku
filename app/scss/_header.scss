@@ -1,16 +1,8 @@
 .header {
   position: relative;
-
   &__top {
     border-bottom: 1px solid #E2E1E1;
     min-height: 90px;
-    position: relative;
-    z-index: 2;
-
-    &:after {
-
-    }
-
     &-link {
       font-size: 18px;
       line-height: 23px;
@@ -18,10 +10,6 @@
       font-weight: 700;
       color: #069E2D;
       text-align: right;
-
-      &-text {
-
-      }
     }
   }
 
@@ -49,10 +37,6 @@
     text-align: center;
   }
 
-  &__main {
-
-  }
-
   &__bg {
     position: absolute;
     right: 0;
@@ -63,6 +47,7 @@
     background-size: cover;
     background-position: center;
     clip-path: circle(60% at 66% 36%);
+    z-index: -1;
   }
 }
 
@@ -87,18 +72,17 @@
 }
 
 @media (max-width: 792px) {
-  .title--size-big {
-    font-size: 38px;
-    line-height: 52px;
+  .title{
+    &.title--size-big {
+      font-size: 38px;
+      line-height: 52px;
+    }
   }
+
   .header {
     &__content {
       position: relative;
       z-index: 2;
-    }
-
-    &__bg {
-
     }
   }
 }
@@ -157,6 +141,9 @@
   .header {
     &__top {
       height: 60px;
+    }
+    &__content{
+      padding-right: 0;
     }
   }
   .logo {
